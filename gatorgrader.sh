@@ -119,6 +119,10 @@ if [ "$CHECK" = true ]; then
   determine_exit_code $? "mdl README.md"
   proselint README.md
   determine_exit_code $? "proselint README.md"
+  mdl src/www/answers.md
+  determine_exit_code $? "mdl src/www/answers.md"
+  proselint src/www/answers.md
+  determine_exit_code $? "proselint src/www/answers.md"
   echo ""
   printf "%s\n" "${blu}...Finished checking the correctness of your technical writing${end}"
 
@@ -161,7 +165,7 @@ if [ "$CHECK" = true ]; then
                                      --checkfiles answers.md --fragments "*" --fragmentcounts 3
   determine_exit_code $?
   # --> GatorGrader CHECK: the repository contains at least three commits (update to current + 3)
-  python3 gatorgrader/gatorgrader.py --nowelcome --commits 10
+  python3 gatorgrader/gatorgrader.py --nowelcome --commits 11
   determine_exit_code $?
   echo ""
   printf "%s\n" "${blu}... Finished checking with GatorGrader${end}"
