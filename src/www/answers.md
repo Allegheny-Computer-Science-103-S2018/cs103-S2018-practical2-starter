@@ -56,7 +56,7 @@ formatting options as are available in HTML.
 
 I was amazed to discover that there were a wide variety Octocat images from
 GitHub that are available in their [GitHub
-Octodex](https://octodex.github.com/). I am wondering who are the artists at
+Octodex](https://octodex.github.edu/). I am wondering who are the artists at
 GitHub who design these interesting graphics. Here is a sample of one of them.
 
 ![The Labocat](https://octodex.github.com/images/labtocat.html "The Labocat")
